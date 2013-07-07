@@ -20,4 +20,9 @@ class PicturesController < ActionController::Base
 				},	
 		]
 	end
+
+	def picture0
+	end
+
+
 end
