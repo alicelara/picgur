@@ -22,6 +22,12 @@ class PicturesController < ActionController::Base
 	end
 
 	def picture0
+				@picture = 
+			{
+				:title => 'Penguin',
+				:artist => 'pingu',
+				:url => 'http://upload.wikimedia.org/wikipedia/en/c/c2/Pingu.png'
+				}
 	end
 
 
