@@ -43,5 +43,13 @@ class PicturesController < ActionController::Base
 			@picture = @pictures[params[:id].to_i]
 	end
 
+	def new
+		
+	end
+
+	def create
+		
+	end
+
 
 end
