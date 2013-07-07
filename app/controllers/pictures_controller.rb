@@ -4,7 +4,7 @@ class PicturesController < ActionController::Base
 	end
 
 	def show
-			@picture = @pictures[params[:id].to_i]
+			@picture = Picture.find(params[:id])
 	end
 
 	def new
