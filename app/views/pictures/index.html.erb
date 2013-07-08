@@ -1,6 +1,7 @@
 <h1>Picgur</h1>
+<%= link_to "Add picture", "/pictures/new" %>
 
 <% @pictures.each do |pic| %>
 	<p><%= pic[:title] %>, <%= pic[:artist] %></p>
-	<img src = "<%= pic[:url] %>">
-<% end %>
+	<%= link_to image_tag(pic.url), "/pictures/#{pic.id}" %>
+	<% end %>
